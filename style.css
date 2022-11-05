@@ -1,0 +1,220 @@
+*{padding: 0; margin: 0;box-sizing: border-box;}
+
+h1{font-size: 50px;color: black;}
+h2{font-size: 46px;line-height: 54px;color: black;}
+h4{font-size: 20px;color: black;}
+
+h6{font-weight: 700px;font-size: 12px;color:black;}
+p{font-size: 16px;margin: 15px 0px 20px 0px;color: black;}
+
+.section-p1{padding:50px 80px;}
+.section-m1{margin: 40px 0px;}
+body{width: 100%; overflow-x: hidden;}
+
+
+
+
+
+
+#header{display: flex;justify-content: space-between;padding: 20px 80px;background-color: gray;
+box-shadow: 0px 5px 3px 2px rgb(205, 205, 205);}
+#header .fa-slack{color: white;font-size: 50px;}
+.sticky{position: fixed;width: 100%;z-index: 999;}
+.navbar ul li{display: inline;padding: 0px 10px;list-style-type: none;position: relative;}
+.navbar li a{ text-decoration: none;font-size: 16px;font-weight: 700px;color: white;}
+.navbar li a:hover,.navbar li a.active
+{color: aqua;transition: 0.3s ease;}
+
+.navbar li a.active::after,
+.navbar li a:hover::after{
+    content: "";
+    width: 40%;
+    height: 2px;
+    position: absolute;
+    background: aqua;
+    bottom: -4px;
+    left: 10px;
+}
+.top-icon i{ color: red;position: absolute;top: 0;right: 0;font-size: 30px;padding: 5px 5px;
+ cursor: pointer; display: none;}
+
+
+
+#hero{background-image: url(img/hero-png/hero\(2\).png);
+width: 100%;height: 100vh;background-position:top -3% right 10%;background-repeat: no-repeat;
+ padding: 0px 80px;display: flex; flex-direction: column; justify-content: center;
+ align-items: flex-start; background-size: auto; background-color: aliceblue; }
+
+
+ #hero h4{ padding-bottom: 10px;}
+ #hero h1{color: rgb(0, 174, 174);}
+
+ #hero button{background-image: url(img/button-png/btn\(1\).png);
+background-color: transparent;border: 0;padding: 16px 30px;border-radius: 20px 5px;
+cursor: pointer;font-weight: 700px;font-size: 17px;}
+ /* hero end */
+
+.fetures{width: 100%; display: flex;justify-content: center; gap: 5px; align-items: center;}
+.fetures .fe-box img{width: 100px ; height: 100px;}
+.fetures .fe-box{width: 180px;text-align: center;
+ border: 1px solid whitesmoke; box-shadow: 20px 20px 34px; color:rgb(0, 0, 0,0.1);
+ border-radius: 10px; cursor: pointer;}
+ .fetures .fe-box:hover{box-shadow: 10px 20px 54px; }
+ .fe-box h6{margin: 10px 0px; background-color: antiquewhite;border-radius: 10px 20px;}
+ .fetures .fe-box h6{display: block;}
+ .fetures .fe-box:nth-child(2) h6{background-color: rgb(0, 97, 129,0.3);color: white;}
+ .fetures .fe-box:nth-child(4) h6{background-color: rgba(129, 0, 112, 0.3);color:white;}
+ .fetures .fe-box:nth-child(5) h6{background-color: rgb(185, 0, 12,0.4);color: rgb(94, 94, 94);}
+ .fetures .fe-box:nth-child(3) h6{background-color: rgba(147, 151, 152, 0.408);color: rgb(12, 11, 11);}
+
+
+ /* futures end */
+
+
+.product1{text-align: center;}
+.product1 .max-pro{ display: flex;justify-content: center;align-items:center; gap: 5px;}
+ .pro-container{ width: 250px; padding: 10px; border: 2px solid rgb(213, 213, 213);
+ border-radius: 20px; box-shadow: 5px 5px 30px 2px gainsboro; position: relative;}
+ .pro-container img{ width: 100%;min-height:150px;height: 280px;  border-radius: 20px;cursor: pointer;}
+ .pro-container:hover{  box-shadow: 10px 10px 54px 10px gainsboro;}
+.pro{display: flex;justify-content:center ;flex-direction: column;align-items: flex-start;}
+.pro h6{font-size: 17px;}
+.fa-star{color: gold;}
+.pro h4{color: rgb(23, 163, 163);}
+.pro-container .cart{ color: rgb(19, 137, 137);background-color: rgb(221, 229, 221);
+    padding: 10px;border-radius: 50%;cursor: pointer;position: absolute;bottom: 0;right: 0;
+    margin: 10px;}
+
+
+
+    /* product1 end */
+
+.banner{ display: flex;justify-content: center;align-items: center;text-align: center;flex-direction: column;
+        background-image: url(img/banner-sun/sun\(2\).png),url(img/banner-sun/sun\(3\).png);width: 100%; height: 45vh;
+        background-position:center; background-size: cover; }
+
+
+.banner h4{font-size: 20px;padding: 5px auto;font-weight: 700;}
+.banner h2{font-size: 30px; padding: 10px 0px;}
+.banner h2 span{color: red;font-weight: bold; }
+.banner button{ padding: 10px 20px;outline: 0;border: 0;font-weight: bold;
+    background-color: rgb(180, 180, 180);cursor: pointer;}
+.banner button:hover{background-color:rgb(23, 163, 163);color: white;transition: 0.3s;}
+ 
+/* banner end */
+
+
+
+.sm-banner{  display: flex;align-items: center;justify-content: space-between;flex-wrap: wrap;}
+
+.banner-box{ background-image: url(img/sm-banner/sm\(1\).jpg);background-repeat: no-repeat;
+             background-size: cover; background-position: top 80% right 2%;min-width:280px ; max-width: 580px;min-height: 25vh;  max-height: 40vh; 
+             display: flex;justify-content: center;align-items: flex-start;flex-direction: column;
+             padding: 40px; cursor: pointer; background-color: transparent;width: fit-content;height: 100%;}
+.banner-box:hover{background-color: rgb(0, 0, 0,0.5);}
+
+.box2{background-image: url(img/sm-banner/sm\(5\).jpg);min-width:280px ; max-width: 580px;  max-width: 580px;min-height: 25vh;}
+.banner-box h4{font-weight: bold;font-size: 17px;}
+.banner-box h2{padding: 10px 0px; font-size: 30px;}
+.banner-box span{ font-size: bold;font-size: 20px;padding-bottom: 10px;}
+.banner-box button{ background-color: transparent;padding: 8px 15px;border: 1px solid white;
+ color: white;font-weight: bold;}
+.banner-box button:hover{ background-color:rgb(23, 163, 163);color: white;transition: 0.3s;}
+.banner-box h2,h4{color: white;}
+.banner-box span{color: white;}
+
+
+#banner3{ display: flex;align-items: center;justify-content: space-between;}
+#banner3 .banner-box3{ display: flex;justify-content: center;align-items: flex-start;
+flex-direction: column; padding: 0px 10px;background-image: url(img/sm-banner/sm\(2\).jpg);
+width: 30%;height: 30vh;background-position: center;background-size: cover;
+border-radius: 20px;cursor: pointer;}
+
+#banner3 .bx1{background-image: url(img/sm-banner/sm\(4\).jpg);background-position: right 15%;
+background-repeat: no-repeat;}
+#banner3 .bx2{background-image: url(img/sm-banner/sm\(3\).jpg);}
+.banner-box3 h2{color: white;font-size: 30px;}
+.banner-box3 span{font-size: 20px; font-weight: 700;color: rgb(241, 241, 241);
+background-color: rgb(0, 0, 0,0.3);border-radius: 5px;padding: 0px 5px;}
+
+ 
+
+/* banner section end */
+
+
+.newlater-container{display: flex;align-items: center;justify-content: space-between;
+  background-image: url(img/news/n-banner.png);background-size: cover;background-position: center;
+  background-color: rgb(0, 0, 0,0.3);}
+.news p{ color:white; font-size: 20px;}
+.news span{color: yellow;font-weight: bold;}
+.news h3{ color: white;font-size: 25px;}
+.form{display: flex;}
+.form input{height: 30px;border: 0; padding: 5px 20px;}
+ .form input[type="submit"]{border: 0;border-radius: 0;background-color: rgb(23, 163, 163);
+cursor: pointer;color: white;font-weight: bold;}
+ 
+/* newslater end */
+
+footer{display: flex; flex-wrap: wrap;justify-content: space-around;}
+footer a:hover{ color:rgb(23, 163, 163) ;}
+.div1 .fa-slack{font-size: 50px;padding: 10px 0;}
+.follow .icon i{ padding: 5px;font-size: 20px; margin-top: 10px;cursor: pointer;}
+.div2{ display: flex;flex-direction: column;align-items: flex-start;justify-content: space-around;}
+.div2 a{ text-decoration: none;color: black;}
+
+.div3{display: flex;flex-direction: column;align-items: flex-start;justify-content: space-around;}
+.div3 a{text-decoration: none;color: black;}
+
+.div4{ margin-top: 10px;}
+.div4 .image i{ font-size: 30px;}
+.div4 .payment-icon i{ font-size: 40px;}
+.fa-google-play{color: rgb(0, 190, 105);cursor: pointer;}
+.fa-cc-visa{background-color: rgb(11, 11, 95);color: white;cursor: pointer;}
+.fa-cc-mastercard{background-color: orangered;color: rgb(255, 255, 255);cursor: pointer;}
+.fa-cc-paypal{background-color: rgb(8, 8, 51);color: white;cursor: pointer;}
+
+
+
+
+
+
+
+/* footer end */
+
+
+
+@media(max-width:768px){
+   
+
+
+
+
+#header{display: block;width: 40%;
+        height: 100vh;background-color: red;
+        position: absolute;top: 0;right:0; justify-content: center;align-items: center;
+        transform: translateX(100%);opacity: 0;pointer-events: none;overflow: hidden;
+        visibility: hidden;}
+
+.navbar ul li{display:flex;flex-direction: column;justify-content: center; align-items: center;
+    padding: 10px 0px;}
+.navbar ul li a{ font-size: 20px;}
+
+
+  
+.navbar li a.active::after,
+.navbar li a:hover::after{
+    content: "";
+    width: 10%;
+    height: 2px;
+    position: absolute;
+    background: aqua;
+    bottom: -4px;
+    left: 45%;
+}        
+     
+  
+        
+
+}
+
+
